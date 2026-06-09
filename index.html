@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>ayyarham — Portfolio</title>
@@ -38,6 +40,9 @@ body::before{
   background-image:radial-gradient(circle,rgba(0,0,0,.08) 1px,transparent 1px);
   background-size:24px 24px;pointer-events:none;z-index:0;
 }
+
+/*icons about me*/
+.card-icon img { width: 48px; height: 48px; object-fit: contain; }
 #motion-canvas{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.55;}
 .orb{position:fixed;border-radius:50%;pointer-events:none;z-index:0;filter:blur(60px);mix-blend-mode:multiply;}
 .orb-1{width:520px;height:520px;background:radial-gradient(circle,rgba(230,51,41,.18) 0%,transparent 70%);top:-120px;right:-80px;animation:orb-drift-1 18s ease-in-out infinite;}
@@ -207,6 +212,7 @@ section{position:relative;z-index:1;padding:7rem 3rem;max-width:1300px;margin:0 
 .service-card:nth-child(6){border-top:6px solid var(--accent-r);}
 .service-num{position:absolute;top:.8rem;right:1rem;font-family:var(--font-head);font-size:3rem;color:rgba(0,0,0,.06);letter-spacing:1px;line-height:1;user-select:none;}
 .service-icon{font-size:2.8rem;margin-bottom:1rem;display:block;transition:transform .3s var(--ease-spring);}
+.service-icon img{width:2.8rem;height:2.8rem;object-fit:contain;}
 .service-card:hover .service-icon{transform:scale(1.2) rotate(-10deg);}
 .service-title{font-family:var(--font-head);font-size:1.2rem;font-weight:800;letter-spacing:-0.5px;color:var(--ink);margin-bottom:.5rem;}
 .service-desc{font-size:.85rem;line-height:1.7;color:#555;}
@@ -322,7 +328,7 @@ footer{
 
 <section id="home">
   <div class="hero-left">
-    <div class="hero-greeting reveal">👋 Hello World!</div>
+    <div class="hero-greeting reveal">Hello World!</div>
     <div class="hero-name-wrap reveal reveal-d1">
       <div class="hero-name-shadow" aria-hidden="true">AYYARHAM</div>
       <div class="hero-name">AYYARHAM</div>
@@ -337,8 +343,8 @@ footer{
       I build intelligent systems and beautiful interfaces. I turn messy data into clear, compelling stories is what I do best.
     </p>
     <div class="hero-btns reveal reveal-d4">
-      <a href="#service" class="btn-primary">🚀 See My Work</a>
-      <a href="#contact" class="btn-outline">💬 Let's Talk</a>
+      <a href="#service" class="btn-primary"> See My Work</a>
+      <a href="#contact" class="btn-outline">  Let's Talk</a>
     </div>
   </div>
   <div class="scroll-hint">
@@ -361,7 +367,7 @@ footer{
     <div class="about-grid">
       <div class="comic-card reveal-left reveal-d2">
         <div class="comic-card-label">Bio</div>
-        <div class="card-icon" style="margin-top:.5rem">🧬</div>
+        <div class="card-icon" style="margin-top:.5rem"><img src="stress.png" alt="Stress"></div>
         <div class="card-title">The Stressed Dev</div>
         <div class="card-body">
           I'm a passionate developer and data scientist who thrives at the intersection of intelligence and design.
@@ -373,7 +379,7 @@ footer{
       </div>
       <div class="comic-card reveal-right reveal-d3">
         <div class="comic-card-label">Skills</div>
-        <div class="card-icon" style="margin-top:.5rem">⚙️</div>
+        <div class="card-icon" style="margin-top:.5rem"><img src="gear.png" alt="gear"></div>
         <div class="card-title">Tech Stack</div>
         <div class="skill-list" id="skillList">
           <div class="skill-item">
@@ -415,42 +421,42 @@ footer{
     <div class="service-grid">
       <div class="service-card reveal reveal-d1">
         <span class="service-num">01</span>
-        <span class="service-icon">🧠</span>
+        <span class="service-icon"><img src="brain.png" alt="Brain"></span>
         <div class="service-title">Machine Learning</div>
         <div class="service-desc">Classification, regression, clustering, NLP, and computer vision pipelines using TensorFlow, PyTorch, and scikit-learn.</div>
         <div class="service-chip">AI / ML</div>
       </div>
       <div class="service-card reveal reveal-d2">
         <span class="service-num">02</span>
-        <span class="service-icon">📊</span>
+        <span class="service-icon"><img src="dataanalysis.png" alt="dataanalysis"></span>
         <div class="service-title">Data Analysis</div>
         <div class="service-desc">Transforming raw datasets into actionable insights with pandas, NumPy, Matplotlib and Tableau. EDA & storytelling.</div>
         <div class="service-chip">Analytics</div>
       </div>
       <div class="service-card reveal reveal-d3">
         <span class="service-num">03</span>
-        <span class="service-icon">🗄️</span>
+        <span class="service-icon"><img src="database.png" alt="Databases"></span>
         <div class="service-title">Databases</div>
         <div class="service-desc">MySQL, PostgreSQL, MongoDB — efficient schemas, complex queries, and performance optimizations for any scale.</div>
         <div class="service-chip">SQL / NoSQL</div>
       </div>
       <div class="service-card reveal reveal-d4">
         <span class="service-num">04</span>
-        <span class="service-icon">🌐</span>
+        <span class="service-icon"><img src="webdev.png" alt="Web developer"></span>
         <div class="service-title">Web Development</div>
         <div class="service-desc">Responsive, animated, performance-focused web apps with HTML, CSS, JavaScript, React, and Flask/FastAPI backends.</div>
         <div class="service-chip">Full Stack</div>
       </div>
       <div class="service-card reveal reveal-d5">
         <span class="service-num">05</span>
-        <span class="service-icon">🎨</span>
+        <span class="service-icon"><img src="presentation.png" alt="presentation"></span>
         <div class="service-title">Presentations</div>
         <div class="service-desc">Stunning slide decks and infographics that communicate complex ideas clearly — design-first storytelling for any audience.</div>
         <div class="service-chip">Design</div>
       </div>
       <div class="service-card reveal reveal-d6">
         <span class="service-num">06</span>
-        <span class="service-icon">⚙️</span>
+        <span class="service-icon"><img src="c.png" alt="programming"></span>
         <div class="service-title">C Programming</div>
         <div class="service-desc">Systems-level programming — data structures, algorithms, memory management and embedded applications.</div>
         <div class="service-chip">Systems</div>
@@ -468,7 +474,7 @@ footer{
     <div class="resume-grid">
       <div>
         <div class="reveal reveal-d2">
-          <div class="resume-col-title">🎓 Education</div>
+          <div class="resume-col-title"> Education</div>
           <div class="timeline">
             <div class="timeline-item">
               <div class="timeline-year">2025 – Present</div>
@@ -483,7 +489,7 @@ footer{
           </div>
         </div>
         <div class="reveal reveal-d3" style="margin-top:2.5rem">
-          <div class="resume-col-title">🚀 Projects</div>
+          <div class="resume-col-title"> Projects</div>
           <div class="timeline">
             <div class="timeline-item">
               <div class="timeline-year">2025</div>
@@ -520,7 +526,7 @@ footer{
           </div>
         </div>
         <div class="interests-wrap">
-          <h3>✨ Interests</h3>
+          <h3> Interests</h3>
           <div class="interest-list">
             <span class="interest-item">AI Research</span>
             <span class="interest-item">Generative Models</span>
@@ -547,34 +553,34 @@ footer{
     <div class="contact-wrap">
       <div class="contact-links reveal-left reveal-d2">
         <a href="mailto:ayyarhamnwb@gmail.com" class="contact-link">
-          <div class="contact-link-icon">📧</div>
+          <div class="contact-link-icon"><i class="fi fi-rr-envelope"></i></div>
           <div><div class="contact-link-label">Email</div><div class="contact-link-value">ayyarhamnwb@gmail.com</div></div>
           <span class="contact-link-arrow">→</span>
         </a>
         <a href="https://github.com/ayyarham" target="_blank" class="contact-link">
-          <div class="contact-link-icon">🐙</div>
+          <div class="contact-link-icon"><i class="fi fi-brands-github"></i></div>
           <div><div class="contact-link-label">GitHub</div><div class="contact-link-value">github.com/ayyarham</div></div>
           <span class="contact-link-arrow">→</span>
         </a>
         <a href="https://linkedin.com/in/ayyarham" target="_blank" class="contact-link">
-          <div class="contact-link-icon">💼</div>
+          <div class="contact-link-icon"><i class="fi fi-brands-linkedin"></i></div>
           <div><div class="contact-link-label">LinkedIn</div><div class="contact-link-value">linkedin.com/in/ayyarham</div></div>
           <span class="contact-link-arrow">→</span>
         </a>
         <a href="https://discord.gg/A8AQ5yBpP" target="_blank" class="contact-link">
-          <div class="contact-link-icon">🎮</div>
+          <div class="contact-link-icon"><i class="fi fi-brands-discord"></i></div>
           <div><div class="contact-link-label">Discord</div><div class="contact-link-value">ayyarham/server</div></div>
           <span class="contact-link-arrow">→</span>
         </a>
       </div>
       <div class="wa-form-wrap reveal-right reveal-d3">
-        <div class="wa-form-title">💬 WhatsApp Me</div>
+        <div class="wa-form-title">WhatsApp Me</div>
         <div class="wa-form-sub">Drop a message directly via WhatsApp</div>
         <div class="form-group">
           <label class="form-label" for="waMsg">Message</label>
           <textarea id="waMsg" class="form-textarea" placeholder="Hey Ayyarham, I'd love to collaborate on..."></textarea>
         </div>
-        <button class="btn-wa" onclick="sendWhatsApp()">📱 Send on WhatsApp</button>
+        <button class="btn-wa" onclick="sendWhatsApp()"> Send on WhatsApp</button>
       </div>
     </div>
   </div>
